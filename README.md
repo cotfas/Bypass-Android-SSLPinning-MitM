@@ -86,4 +86,16 @@ Voila.
 
 Results:
 
-[insert image]
+![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/12-certificate-nuked-success.png)
+
+![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/13-results01.png)
+
+![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/14-results02.png)
+
+![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/15-results03.png)
+
+![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/16-results04.png)
+
+![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/17-results05.png)
+
+
