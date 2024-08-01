@@ -57,28 +57,30 @@ Copy the frida-server and the cert-der-proxyman.crt certificate to your emulator
 
 Execute proper shell access:
 
+```
 adb shell chmod 755 /data/local/tmp/frida-server
 adb shell chmod 755 /data/local/tmp/cert-der-proxyman.crt
-
-[insert image]
+```
 
 Execute the FRIDA server locally and let it run:
 
+```
 adb shell /data/local/tmp/frida-server
+```
 
-[insert image]
+<img align="center" width="80%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/09-run-frida-server.png"/>
 
 Check if the FRIDA connection works by doing a PS ( process list ):
-
+```
 frida-ps -U
-
-[insert image]
+```
+<img align="center" width="80%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/10-check-frida-connection.png"/>
 
 Start the Android App as SSL nuked:
-
+```
 frida -U -f com.twitter.android -l frida-inject.js
-
-[insert image]
+```
+<img align="center" width="80%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/11-hijack-certificate.png"/>
 
 Voila.
 
