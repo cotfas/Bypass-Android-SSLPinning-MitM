@@ -12,6 +12,7 @@
 
 </br>
 
+
 ⚠️ When you first try to do a SSL sniffing, you will most probably get to an error like: SSL Handshake Failed:
 
 ![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/07-ssl-handshake-failed.png)
@@ -20,6 +21,7 @@
 
 🧩 First and foremost, install Genymotion, Python,  ProxyMan and do the proper setup for proxying. *you can follow this article if you don't know how to do it: https://proxyman.io/android-emulator
 
+</br>
 👉 Next step is to install the proper command lines:
 
 ```
@@ -28,33 +30,50 @@ pip install objection
 pip install frida-tools
 ```
 
+</br>
 👉 Install on the Genymotion emulator:
 `- Samsung Galaxy S8 - Android 8.0 ( api 26 ) *the reason I've chosen this device is because with newer versions of Android there are extra layers of security to bypass, but if the APK Android application has support lower to this version, you are good to go.`
 
 ![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/01-genymotion.png)
 
+</br>
 👉 Install Open GApps from the right menu of Genymotion:
 
+<p align="center">
 <img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/03-install-gapps.png"/>
+</p>
 
+</br>
 👉 Drag & drop the "ARM Translation v8" zip file over Genymotion emulator:
 
+<p align="center">
 <img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/04-install-arm-translation.png"/>
+</p>
 
+</br>
 👉 Install X-plore, and grant root privileges:
 
+<p align="center">
 <img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/02-emulator-rooted.png"/>
+</p>
 
+</br>
 👉 Export the ProxyMan certificate to your local computer, and rename it to cert-der-proxyman.crt
 
 👉 Setup the ProxyMan SSL certificates over the emulator:
 
+<p align="center">
 <img align="center" width="60%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/00-steps-setup-proxyman.png"/>
+</p>
 
+</br>
 👉 Copy the frida-server and the cert-der-proxyman.crt certificate to your emulator (you can also use drag&drop), then move the files to: `device location: /data/local/tmp/`
 
+<p align="center">
 <img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/08-xplore-folder-structure.png"/>
+</p>
 
+</br>
 👉 Execute proper shell access:
 
 ```
@@ -62,28 +81,38 @@ adb shell chmod 755 /data/local/tmp/frida-server
 adb shell chmod 755 /data/local/tmp/cert-der-proxyman.crt
 ```
 
+</br>
 👉 Execute the FRIDA server locally and let it run:
 
 ```
 adb shell /data/local/tmp/frida-server
 ```
 
+<p align="center">
 <img align="center" width="80%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/09-run-frida-server.png"/>
+</p>
 
+</br>
 👉 Check if the FRIDA connection works by doing a PS ( process list ):
 ```
 frida-ps -U
 ```
+<p align="center">
 <img align="center" width="80%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/10-check-frida-connection.png"/>
+</p>
 
+</br>
 ♻️ Start the Android App as SSL nuked:
 ```
 frida -U -f com.twitter.android -l frida-inject.js
 ```
+<p align="center">
 <img align="center" width="100%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/11-hijack-certificate.png"/>
+</p>
 
 🏆 Voila.
 
+</br>
 🎯 Results:
 
 ![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/12-certificate-nuked-success.png)
