@@ -49,9 +49,9 @@ pip install frida-tools
 
 👉 Setup the ProxyMan SSL certificates over the emulator:
 
-<img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/00-steps-setup-proxyman.png"/>
+<img align="center" width="60%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/00-steps-setup-proxyman.png"/>
 
-👉 Copy the frida-server and the cert-der-proxyman.crt certificate to your emulator (you can also use drag&drop), then move the files to: device location: /data/local/tmp/
+👉 Copy the frida-server and the cert-der-proxyman.crt certificate to your emulator (you can also use drag&drop), then move the files to: `device location: /data/local/tmp/`
 
 <img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/08-xplore-folder-structure.png"/>
 
