@@ -80,7 +80,7 @@ Start the Android App as SSL nuked:
 ```
 frida -U -f com.twitter.android -l frida-inject.js
 ```
-<img align="center" width="80%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/11-hijack-certificate.png"/>
+<img align="center" width="100%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/11-hijack-certificate.png"/>
 
 Voila.
 
