@@ -33,15 +33,15 @@ Install on the Genymotion emulator:
 
 Install Open GApps from the right menu of Genymotion:
 
-![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/03-install-gapps.png)
+<img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/03-install-gapps.png"/>
 
 Drag & drop the "ARM Translation v8" zip file over Genymotion emulator:
 
-![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/04-install-arm-translation.png)
+<img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/04-install-arm-translation.png"/>
 
 Install X-plore, and grant root privileges:
 
-![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/02-emulator-rooted.png)
+<img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/02-emulator-rooted.png"/>
 
 Export the ProxyMan certificate to your local computer, and rename it to cert-der-proxyman.crt
 
@@ -49,11 +49,11 @@ Export the ProxyMan certificate to your local computer, and rename it to cert-de
 
 Setup the ProxyMan SSL certificates over the emulator:
 
-![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/00-steps-setup-proxyman.png)
+<img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/00-steps-setup-proxyman.png"/>
 
 Copy the frida-server and the cert-der-proxyman.crt certificate to your emulator (you can also use drag&drop), then move the files to: device location: /data/local/tmp/
 
-![insert image](https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/08-xplore-folder-structure.png)
+<img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/08-xplore-folder-structure.png"/>
 
 Execute proper shell access:
 
