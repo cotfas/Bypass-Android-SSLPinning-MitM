@@ -45,8 +45,6 @@ Install X-plore, and grant root privileges:
 
 Export the ProxyMan certificate to your local computer, and rename it to cert-der-proxyman.crt
 
-[insert image]
-
 Setup the ProxyMan SSL certificates over the emulator:
 
 <img align="center" width="40%" src="https://github.com/cotfas/Bypass-Android-SSLPinning-MitM/blob/main/screenshots/00-steps-setup-proxyman.png"/>
